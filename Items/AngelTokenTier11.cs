@@ -4,11 +4,11 @@ using Terraria.ModLoader;
 
 namespace AngelMod.Items
 {
-    public class AngelTokenTier3 : ModItem
+    public class AngelTokenTier11 : ModItem
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Tier 3 Offering Token");
+            DisplayName.SetDefault("Tier 11 Offering Token");
             Tooltip.SetDefault("...");
         }
 
@@ -22,20 +22,19 @@ namespace AngelMod.Items
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.CrimstoneBlock, 50);
-            recipe.AddIngredient(ItemID.Vertebrae, 10);
-            recipe.AddIngredient(ItemID.CrimtaneBar, 10);
-            recipe.AddIngredient(ItemID.TissueSample, 10);
-            recipe.AddTile(TileID.Anvils);
+            //recipe.AddIngredient(ItemID.CrimstoneBlock, 50);
+            //recipe.AddIngredient(ItemID.Vertebrae, 10);
+            //recipe.AddIngredient(ItemID.CrimtaneBar, 10);
+            //recipe.AddTile(TileID.Anvils);
             recipe.SetResult(this);
             recipe.AddRecipe();
         }
     }
-    public class OfferAngelTokenTier3 : ModItem
+    public class OfferAngelTokenTier11 : ModItem
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Offer Tier 3 Token");
+            DisplayName.SetDefault("Offer Tier 11 Token");
             Tooltip.SetDefault("A Small Sacrifice");
         }
 
@@ -43,24 +42,23 @@ namespace AngelMod.Items
         {
             item.value = 0;
             item.rare = 0;
-            item.maxStack = 999;
         }
 
         public override void OnCraft(Recipe recipe)
         {
-            Main.LocalPlayer.GetModPlayer<AngelPlayer>().SpawnTier3();
+            Main.LocalPlayer.GetModPlayer<AngelPlayer>().SpawnTier11();
             item.TurnToAir();
         }
 
         public override void AddRecipes()
         {
             AngelRecipe recipe = new AngelRecipe(mod);
-            recipe.AddIngredient(mod.GetItem("AngelTokenTier3"));
+            recipe.AddIngredient(mod.GetItem("AngelTokenTier11"));
             recipe.SetResult(this);
             recipe.AddRecipe();
 
             PocketAngelRecipe PArecipe = new PocketAngelRecipe(mod);
-            PArecipe.AddIngredient(mod.GetItem("AngelTokenTier3"));
+            PArecipe.AddIngredient(mod.GetItem("AngelTokenTier11"));
             PArecipe.SetResult(this);
             PArecipe.AddRecipe();
         }

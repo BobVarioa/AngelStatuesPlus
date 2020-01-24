@@ -89,7 +89,7 @@ namespace AngelMod
                     break;
                 case 5:
                     player.QuickSpawnItem(ItemID.LesserHealingPotion, 1);
-                    if (AngelStatueMessages) Main.NewText("Work on your inside before your outside, actually focus on your outside, you have some pretty nasty bruises right there.");
+                    if (AngelStatueMessages) Main.NewText("Focus on your inside before your outside, actually work on your outside, you have some pretty nasty bruises right there.");
                     break;
             }
         }
@@ -98,22 +98,28 @@ namespace AngelMod
             switch (Main.rand.Next(0, 5))
             {
                 case 0:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
                 case 1:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
                 case 2:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
                 case 3:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
                 case 4:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
                 case 5:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
             }
         }
@@ -122,22 +128,28 @@ namespace AngelMod
             switch (Main.rand.Next(0, 5))
             {
                 case 0:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
                 case 1:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
                 case 2:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
                 case 3:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
                 case 4:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
                 case 5:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
             }
         }
@@ -146,22 +158,28 @@ namespace AngelMod
             switch (Main.rand.Next(0, 5))
             {
                 case 0:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
                 case 1:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
                 case 2:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
                 case 3:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
                 case 4:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
                 case 5:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
             }
         }
@@ -170,22 +188,28 @@ namespace AngelMod
             switch (Main.rand.Next(0, 5))
             {
                 case 0:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
                 case 1:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
                 case 2:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
                 case 3:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
                 case 4:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
                 case 5:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
             }
         }
@@ -194,22 +218,28 @@ namespace AngelMod
             switch (Main.rand.Next(0, 5))
             {
                 case 0:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
                 case 1:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
                 case 2:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
                 case 3:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
                 case 4:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
                 case 5:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
             }
         }
@@ -218,22 +248,28 @@ namespace AngelMod
             switch (Main.rand.Next(0, 5))
             {
                 case 0:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
                 case 1:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
                 case 2:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
                 case 3:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
                 case 4:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
                 case 5:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
             }
         }
@@ -242,22 +278,28 @@ namespace AngelMod
             switch (Main.rand.Next(0, 5))
             {
                 case 0:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
                 case 1:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
                 case 2:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
                 case 3:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
                 case 4:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
                 case 5:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
             }
         }
@@ -266,22 +308,28 @@ namespace AngelMod
             switch (Main.rand.Next(0, 5))
             {
                 case 0:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
                 case 1:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
                 case 2:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
                 case 3:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
                 case 4:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
                 case 5:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
             }
         }
@@ -290,22 +338,28 @@ namespace AngelMod
             switch (Main.rand.Next(0, 5))
             {
                 case 0:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
                 case 1:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
                 case 2:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
                 case 3:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
                 case 4:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
                 case 5:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
             }
         }
@@ -314,22 +368,28 @@ namespace AngelMod
             switch (Main.rand.Next(0, 5))
             {
                 case 0:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
                 case 1:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
                 case 2:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
                 case 3:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
                 case 4:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
                 case 5:
-
+                    player.QuickSpawnItem(ItemID.AngelStatue, 1);
+                    if (AngelStatueMessages) Main.NewText("...");
                     break;
             }
         }
