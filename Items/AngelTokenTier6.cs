@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -48,6 +49,13 @@ namespace AngelMod.Items
         {
             Main.LocalPlayer.GetModPlayer<AngelPlayer>().SpawnTier6();
             item.TurnToAir();
+        }
+
+        public override void ModifyTooltips(List<TooltipLine> tooltips)
+        {
+            AngelPlayer player = Main.LocalPlayer.GetModPlayer<AngelPlayer>();
+            TooltipLine tooltipLine = new TooltipLine(mod, "1", $"Sacrifced {player.AngelTokensSacrifced6} Token" + (player.AngelTokensSacrifced6 != 1 ? "s" : "") + "");
+            tooltips.Add(tooltipLine);
         }
 
         public override void AddRecipes()

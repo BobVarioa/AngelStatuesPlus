@@ -1,7 +1,10 @@
-﻿using Terraria;
+﻿using System;
+using System.Collections.Generic;
+using Terraria;
 using Terraria.GameInput;
 using Terraria.ID;
 using Terraria.ModLoader;
+using Terraria.ModLoader.IO;
 
 namespace AngelMod
 {
@@ -9,20 +12,73 @@ namespace AngelMod
     {
         public bool AngelStatueMessages = true;
         public bool PocketAngelStatue = false;
-
+        public int AngelTokensSacrifced0 = 0;
+        public int AngelTokensSacrifced1 = 0;
+        public int AngelTokensSacrifced2 = 0;
+        public int AngelTokensSacrifced3 = 0;
+        public int AngelTokensSacrifced4 = 0;
+        public int AngelTokensSacrifced5 = 0;
+        public int AngelTokensSacrifced6 = 0;
+        public int AngelTokensSacrifced7 = 0;
+        public int AngelTokensSacrifced8 = 0;
+        public int AngelTokensSacrifced9 = 0;
+        public int AngelTokensSacrifced10 = 0;
+        public int AngelTokensSacrifced11 = 0;
+        public int AngelTokensSacrificedTotal = 0;
         public override void ResetEffects()
         {
             PocketAngelStatue = false;
         }
+
+        public override TagCompound Save()
+        {
+            var AngelTokensSacrifced = new List<int>();
+            AngelTokensSacrifced.Add(AngelTokensSacrifced0);
+            AngelTokensSacrifced.Add(AngelTokensSacrifced1);
+            AngelTokensSacrifced.Add(AngelTokensSacrifced2);
+            AngelTokensSacrifced.Add(AngelTokensSacrifced3);
+            AngelTokensSacrifced.Add(AngelTokensSacrifced4);
+            AngelTokensSacrifced.Add(AngelTokensSacrifced5);
+            AngelTokensSacrifced.Add(AngelTokensSacrifced6);
+            AngelTokensSacrifced.Add(AngelTokensSacrifced7);
+            AngelTokensSacrifced.Add(AngelTokensSacrifced8);
+            AngelTokensSacrifced.Add(AngelTokensSacrifced9);
+            AngelTokensSacrifced.Add(AngelTokensSacrifced10);
+            AngelTokensSacrifced.Add(AngelTokensSacrifced11);
+            return new TagCompound {
+				{"AngelTokensSacrifced", AngelTokensSacrifced},
+                {"AngelTokensSacrificedTotal", AngelTokensSacrificedTotal}
+            };
+        }
+
+        public override void Load(TagCompound tag)
+        {
+            var AngelTokensSacrifced = tag.GetList<int>("AngelTokensSacrifced");
+            AngelTokensSacrifced0 = AngelTokensSacrifced[0];
+            AngelTokensSacrifced1 = AngelTokensSacrifced[1];
+            AngelTokensSacrifced2 = AngelTokensSacrifced[2];
+            AngelTokensSacrifced3 = AngelTokensSacrifced[3];
+            AngelTokensSacrifced4 = AngelTokensSacrifced[4];
+            AngelTokensSacrifced5 = AngelTokensSacrifced[5];
+            AngelTokensSacrifced6 = AngelTokensSacrifced[6];
+            AngelTokensSacrifced7 = AngelTokensSacrifced[7];
+            AngelTokensSacrifced8 = AngelTokensSacrifced[8];
+            AngelTokensSacrifced9 = AngelTokensSacrifced[9];
+            AngelTokensSacrifced10 = AngelTokensSacrifced[10];
+            AngelTokensSacrifced11 = AngelTokensSacrifced[11];
+            AngelTokensSacrificedTotal = tag.GetInt("AngelTokensSacrificedTotal");
+    }
 
         public override void ProcessTriggers(TriggersSet triggersSet)
         {
             if (AngelMod.AngelStatueMessagesToggle.JustPressed && AngelStatueMessages == false)
             {
                 AngelStatueMessages = true;
+                ResetAngelProgress();
             } else if (AngelMod.AngelStatueMessagesToggle.JustPressed && AngelStatueMessages == true)
             {
                 AngelStatueMessages = false;
+                ResetAngelProgress();
             }
         }
 
@@ -62,6 +118,7 @@ namespace AngelMod
             {
                 if (AngelStatueMessages) Main.NewText("Just Stop.");
             }
+            AngelTokensSacrifced0++;
         }
         public void SpawnTier1() // Pre Boss
         {
@@ -92,6 +149,7 @@ namespace AngelMod
                     if (AngelStatueMessages) Main.NewText("Focus on your inside before your outside, actually work on your outside, you have some pretty nasty bruises right there.");
                     break;
             }
+            AngelTokensSacrifced1++;
         }
         public void SpawnTier2() // Post Eye of Cthulhu
         {
@@ -122,6 +180,7 @@ namespace AngelMod
                     if (AngelStatueMessages) Main.NewText("...");
                     break;
             }
+            AngelTokensSacrifced2++;
         }
         public void SpawnTier3() // Post Brain Of Cthulhu / Eater of Worlds
         {
@@ -152,6 +211,7 @@ namespace AngelMod
                     if (AngelStatueMessages) Main.NewText("...");
                     break;
             }
+            AngelTokensSacrifced3++;
         }
         public void SpawnTier4() // Post Skeletron
         {
@@ -182,6 +242,7 @@ namespace AngelMod
                     if (AngelStatueMessages) Main.NewText("...");
                     break;
             }
+            AngelTokensSacrifced4++;
         }
         public void SpawnTier5() // Pre Wall Of Flesh
         {
@@ -212,6 +273,7 @@ namespace AngelMod
                     if (AngelStatueMessages) Main.NewText("...");
                     break;
             }
+            AngelTokensSacrifced5++;
         }
         public void SpawnTier6() // Early Hardmode
         {
@@ -242,6 +304,7 @@ namespace AngelMod
                     if (AngelStatueMessages) Main.NewText("...");
                     break;
             }
+            AngelTokensSacrifced6++;
         }
         public void SpawnTier7() // Post Mechanical Bosses
         {
@@ -272,6 +335,7 @@ namespace AngelMod
                     if (AngelStatueMessages) Main.NewText("...");
                     break;
             }
+            AngelTokensSacrifced7++;
         }
         public void SpawnTier8() // Post Plantera
         {
@@ -302,6 +366,7 @@ namespace AngelMod
                     if (AngelStatueMessages) Main.NewText("...");
                     break;
             }
+            AngelTokensSacrifced8++;
         }
         public void SpawnTier9() // Pre Golem
         {
@@ -332,6 +397,7 @@ namespace AngelMod
                     if (AngelStatueMessages) Main.NewText("...");
                     break;
             }
+            AngelTokensSacrifced9++;
         }
         public void SpawnTier10() // Lunar Events
         {
@@ -362,6 +428,7 @@ namespace AngelMod
                     if (AngelStatueMessages) Main.NewText("...");
                     break;
             }
+            AngelTokensSacrifced10++;
         }
         public void SpawnTier11() // Post Moon Lord
         {
@@ -392,6 +459,7 @@ namespace AngelMod
                     if (AngelStatueMessages) Main.NewText("...");
                     break;
             }
+            AngelTokensSacrifced11++;
         }
         public void SpawnBlessing() // Blessing Token
         {
@@ -476,6 +544,23 @@ namespace AngelMod
                         break;
                 }
             }
+        }
+
+        public void ResetAngelProgress()
+        {
+            AngelTokensSacrifced0 = 0;
+            AngelTokensSacrifced1 = 0;
+            AngelTokensSacrifced2 = 0;
+            AngelTokensSacrifced3 = 0;
+            AngelTokensSacrifced4 = 0;
+            AngelTokensSacrifced5 = 0;
+            AngelTokensSacrifced6 = 0;
+            AngelTokensSacrifced7 = 0;
+            AngelTokensSacrifced8 = 0;
+            AngelTokensSacrifced9 = 0;
+            AngelTokensSacrifced10 = 0;
+            AngelTokensSacrifced11 = 0;
+            AngelTokensSacrificedTotal = 0;
         }
     }
 }
