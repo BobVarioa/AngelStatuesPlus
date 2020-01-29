@@ -10,7 +10,7 @@ namespace AngelMod.Items
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Tier 5 Offering Token");
-            Tooltip.SetDefault("...");
+            Tooltip.SetDefault("An emblem made from coalescing spirits of light and dark.");
         }
 
         public override void SetDefaults()

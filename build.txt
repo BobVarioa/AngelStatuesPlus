@@ -1,4 +1,4 @@
-displayName = Angel Statues+
+displayName = Angel Statues Plus
 author = MasterOfBob
 version = 1.0.0.0
 homepage = 

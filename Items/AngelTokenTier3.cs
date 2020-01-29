@@ -10,7 +10,7 @@ namespace AngelMod.Items
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Tier 3 Offering Token");
-            Tooltip.SetDefault("...");
+            Tooltip.SetDefault("An emblem with the power of a lesser evil.");
         }
 
         public override void SetDefaults()

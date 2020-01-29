@@ -21,13 +21,14 @@ namespace AngelMod.Items
 
         public override void UpdateInventory(Player player)
         {
-            Main.LocalPlayer.GetModPlayer<AngelPlayer>().PocketAngelStatue = true;
+            player.GetModPlayer<AngelPlayer>().PocketAngelStatue = true;
+            player.GetModPlayer<AngelPlayer>().CalcBlessing();
         }
 
         public override void ModifyTooltips(List<TooltipLine> tooltips)
         {
             AngelPlayer player = Main.LocalPlayer.GetModPlayer<AngelPlayer>();
-            TooltipLine tooltipLine = new TooltipLine(mod, "1", $"Sacrifced {player.AngelTokensSacrificedTotal} Token" + (player.AngelTokensSacrificedTotal != 1 ? "s" : "") + "");
+            TooltipLine tooltipLine = new TooltipLine(mod, "1", $"AP : {player.AngelTokensSacrificedTotal}");
             tooltips.Add(tooltipLine);
         }
 

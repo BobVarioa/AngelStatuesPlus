@@ -10,7 +10,7 @@ namespace AngelMod.Items
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Tier 9 Offering Token");
-            Tooltip.SetDefault("...");
+            Tooltip.SetDefault("An emblem of pure sun forged from ancient technology.");
         }
 
         public override void SetDefaults()
