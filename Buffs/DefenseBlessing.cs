@@ -17,6 +17,7 @@ namespace AngelMod.Buffs
         public override void Update(Player player, ref int buffIndex)
         {
             player.GetModPlayer<AngelPlayer>().BlessingBuffType = (int)BlessingBuffTypeID.Defense;
+            player.GetModPlayer<AngelPlayer>().Blessed = true;
         }
     }
 }

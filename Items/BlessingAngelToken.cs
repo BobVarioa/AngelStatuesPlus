@@ -62,12 +62,7 @@ namespace AngelMod.Items
 
         public override void AddRecipes()
         {
-            AngelRecipe recipe = new AngelRecipe(mod);
-            recipe.AddIngredient(mod.GetItem("BlessingAngelToken"));
-            recipe.SetResult(this);
-            recipe.AddRecipe();
-
-            PocketAngelRecipe PArecipe = new PocketAngelRecipe(mod);
+            BlessingRecipe PArecipe = new BlessingRecipe(mod);
             PArecipe.AddIngredient(mod.GetItem("BlessingAngelToken"));
             PArecipe.SetResult(this);
             PArecipe.AddRecipe();

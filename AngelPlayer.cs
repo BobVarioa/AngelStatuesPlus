@@ -14,6 +14,8 @@ namespace AngelMod
     {
         public bool AngelStatueMessages = true;
         public bool PocketAngelStatue = false;
+
+        // Angel Stats
         public int AngelTokensSacrifced0 = 0;
         public int AngelTokensSacrifced1 = 0;
         public int AngelTokensSacrifced2 = 0;
@@ -29,14 +31,16 @@ namespace AngelMod
         public int BlessingAngelTokensSacrifced = 0; 
         public int AngelTokensSacrificedTotal = 0;
 
+        // Blessing 
         public int BlessingTime = 0;
         public int BlessingPower = 0;
-
         public int BlessingBuffType = 0;
+        public bool Blessed = false;
 
         public override void ResetEffects()
         {
             PocketAngelStatue = false;
+            Blessed = false;
         }
 
         public override TagCompound Save()
@@ -99,7 +103,12 @@ namespace AngelMod
             }
         }
 
-            public void SpawnTier0() // Takes Away Life
+        public override void UpdateEquips(ref bool wallSpeedBuff, ref bool tileSpeedBuff, ref bool tileRangeBuff)
+        {
+            BlessingBuff();
+        }
+
+        public void SpawnTier0() // Takes Away Life
         {
             if (player.statLife > 20)
             {
@@ -499,7 +508,6 @@ namespace AngelMod
         public void ChooseBlessing() // Blessing Token
         {
             CalcBlessing();
-
             if (Main.hardMode == true) {
                 switch (Main.rand.Next(0, 4))
                 {
@@ -543,24 +551,27 @@ namespace AngelMod
         public void BlessingBuff()
         {
             CalcBlessing();
-            switch (BlessingBuffType) 
+            if (Blessed)
             {
-                case (int)BlessingBuffTypeID.Damage:
-                    player.allDamageMult += BlessingPower;
-                    break;
-                case (int)BlessingBuffTypeID.Health:
-                    player.statLifeMax2 += 5 * BlessingPower;
-                    break;
-                case (int)BlessingBuffTypeID.Defense:
-                    player.statDefense += BlessingPower;
-                    player.endurance += (BlessingPower / 2);
-                    break;
-                case (int)BlessingBuffTypeID.Speed:
-                    player.maxRunSpeed += (BlessingPower / 3);
-                    break;
-                case (int)BlessingBuffTypeID.Wings:
-                    player.wingTimeMax += (BlessingPower / 3);
-                    break;
+                switch (BlessingBuffType)
+                {
+                    case (int)BlessingBuffTypeID.Damage:
+                        player.allDamageMult += BlessingPower;
+                        break;
+                    case (int)BlessingBuffTypeID.Health:
+                        player.statLifeMax2 += 5 * BlessingPower;
+                        break;
+                    case (int)BlessingBuffTypeID.Defense:
+                        player.statDefense += BlessingPower;
+                        player.endurance += (BlessingPower / 2);
+                        break;
+                    case (int)BlessingBuffTypeID.Speed:
+                        player.maxRunSpeed += (BlessingPower / 3);
+                        break;
+                    case (int)BlessingBuffTypeID.Wings:
+                        player.wingTimeMax += (BlessingPower / 3);
+                        break;
+                }
             }
         }
 
